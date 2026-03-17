@@ -217,8 +217,16 @@
                                 style="border:none; display:block;"></iframe>
                         </figure>
                         <p class="has-text-centered" style="margin-top:0.75rem; font-size:0.95rem; color:#4a4a4a;">
-                            <strong>Figure 2:</strong> Please replace this placeholder caption with a description of the
-                            method overview pipeline.
+                            <strong>Figure 2:</strong> Method Overview. The workflow is initialized with Object and Hand
+                            inputs.
+                            Grasp synthesis is carried out through two components: a state-adaptive weighting strategy
+                            and a coupling-aware optimization module.
+                            The generated candidate grasps are subjected to a dynamic Shake Test. Only physically stable
+                            poses are retained,
+                            forming the stable grasp dataset $\mathcal{D}_{grasp}$. This dataset is used as the goal set
+                            for privileged teacher policy training.
+                            A student policy is distilled from teacher policy. The distilled student policy is
+                            transferred to physical hardware for Sim2Real deployment.
                         </p>
                     </div>
                 </div>
